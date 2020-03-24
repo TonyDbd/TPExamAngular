@@ -1,0 +1,51 @@
+
+<div class="bg">
+
+<ng-container *ngIf="isLoading">
+    Chargement en cours...
+</ng-container>
+<ng-container *ngIf="!isLoading">
+<div class="container ">
+
+    <div class="text-center text-white py-5">
+        <h1 *ngIf=" ordi.length > 1 ">{{ordi.length}} Ordinateur en stock !</h1>
+        <h2 *ngIf=" ordi.length === 0 ">{{ordi.length}} Ordinateur en stock !</h2>
+        <h2 *ngIf=" ordi.length === 1 ">{{ordi.length}} Ordinateur en stock !</h2>
+    </div>
+
+    <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Model</th>
+            <th scope="col">Marque</th>
+            <th scope="col">Type</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Date</th>
+            <th scope="col">Prix d'<strong>Achat</strong></th>
+            <th scope="col">Prix de <strong>Vente</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ordi of ordi"[routerLink]="['/detailordi', ordi.id]">
+            <th scope="row" class="LineOrdi">{{ordi.id}}</th>
+            <td>{{ordi.model}}</td>
+            <td>{{ordi.marque}}</td>
+            <td>{{ordi.type}}</td>
+            <td>{{ordi.categorie}}</td>
+            <td>{{ordi.date | date:'dd-MM-yyyy'}}</td>
+            <td>{{ordi.prixAchat}}</td>
+            <td>{{ordi.prixVente}}</td>
+            <div class="btn-group boutons" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success" [routerLink]="['/editordi', ordi.id]">Modifier</button>
+                <button type="button" class="btn btn-warning"(click)="deleteOrdi(ordi)">Supprimer</button>
+              </div>
+          </tr>
+         
+        </tbody>
+        
+      </table>
+
+</div>
+</ng-container>
+</div>

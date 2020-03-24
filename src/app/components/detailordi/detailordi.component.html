@@ -1,0 +1,22 @@
+
+
+
+<div class="container">
+    <ng-container *ngIf="isLoading">
+      Chargement en cours
+    </ng-container>
+    
+    <ng-container *ngIf="!isLoading">
+      <h1 class="text-center mt-5">Détail de l'ordinateur n° {{ ordi.id }}</h1><br><br>
+      <label>Modèle : {{ ordi.model }}</label> <br>
+      <label>Marque : {{ ordi.marque }}</label><br>
+      <label>Type : {{ ordi.type }}</label><br>
+      <label>Catégorie : {{ ordi.categorie }}</label><br>
+      <label>Prix d'<strong>Achat</strong> : {{ ordi.prixAchat }} €</label><br>
+      <label>Prix de <strong>Vente</strong> : {{ ordi.prixVente }} €</label><br>
+      <label>Date d'entrée en stock : {{ ordi.date|date: 'dd/MM/yyyy' }}</label><br>
+      <label> Marge de profit → {{marge() | number }} € </label>
+    </ng-container>
+    
+</div>
+    

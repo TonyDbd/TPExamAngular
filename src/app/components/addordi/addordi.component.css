@@ -1,0 +1,11 @@
+.bg{
+    width: 99vw;
+    height: 200vh;
+    background-image: url('https://w.wallhaven.cc/full/76/wallhaven-76xx9e.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.back {
+    background-color: rgb(185, 176, 176);
+}

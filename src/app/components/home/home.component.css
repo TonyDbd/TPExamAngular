@@ -1,0 +1,8 @@
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://w.wallhaven.cc/full/6q/wallhaven-6qmwww.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+   
+}

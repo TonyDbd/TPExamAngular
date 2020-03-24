@@ -1,0 +1,76 @@
+{
+  "ordi": [
+    {
+      "id": 1,
+      "model": "Latitude 3500 - 15.6",
+      "marque": "Dell",
+      "type": "Portable",
+      "category": "Bureautique",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntreStock": "2012-04-23T18:25:43.511Z",
+      "categorie": "Premier prix",
+      "date": "2020-03-13"
+    },
+    {
+      "model": "Incroyable",
+      "marque": "Asus",
+      "type": "Portable",
+      "categorie": "Gaming",
+      "date": "2020-03-24T13:00:06.444Z",
+      "prixAchat": 350,
+      "prixVente": 200,
+      "id": 2
+    },
+    {
+      "model": "j'y suis",
+      "marque": "Dell",
+      "type": "Fixe",
+      "categorie": "Bureautique",
+      "date": "2020-03-24T13:00:35.328Z",
+      "prixAchat": 123,
+      "prixVente": 521,
+      "id": 3
+    },
+    {
+      "model": "Arrivé !!!",
+      "marque": "HP",
+      "type": "Tablette hybride",
+      "categorie": "Premier prix",
+      "date": "2020-03-24T13:01:17.493Z",
+      "prixAchat": 200,
+      "prixVente": 612,
+      "id": 4
+    },
+    {
+      "model": " Test e2e",
+      "marque": "Dell",
+      "type": "Fixe",
+      "categorie": "Bureautique",
+      "date": "2020-03-24T14:05:36.602Z",
+      "prixAchat": 123,
+      "prixVente": 521,
+      "id": 8
+    },
+    {
+      "model": " Test e2e",
+      "marque": "Dell",
+      "type": "Fixe",
+      "categorie": "Bureautique",
+      "date": "2020-03-24T14:18:52.746Z",
+      "prixAchat": 123,
+      "prixVente": 521,
+      "id": 9
+    },
+    {
+      "model": " Test e2e",
+      "marque": "Dell",
+      "type": "Fixe",
+      "categorie": "Bureautique",
+      "date": "2020-03-24T14:25:24.364Z",
+      "prixAchat": 123,
+      "prixVente": 521,
+      "id": 10
+    }
+  ]
+}
